@@ -1,0 +1,9 @@
+<h1>Editing Book</h1>
+<p id="notice"><%= notice %></p>
+
+<div>
+  <%= render 'form', book: @book %>
+</div>
+
+<%= link_to 'Show', @book, class: "show_#{@book.id}" %> 
+<%= link_to 'Back', books_path, class: "back" %>
